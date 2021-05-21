@@ -9,10 +9,13 @@
 */
 
 // ausgabe(rechner(getOp(),getZahl1(),5));
-
+start();
+function start(){
+    ausgabe(rechner(getOp(),getZahl1("1"),getZahl1("2")))
+}
 //  Modul: Zhal 1 eingeben | Test:
-ausgabe(getZahl1("1"));
-ausgabe(getZahl1("2"));
+// ausgabe(getZahl1("1"));
+// ausgabe(getZahl1("2"));
 function getZahl1(numStr) {
     let zahl = parseInt(prompt("Bitte Zahl " + numStr + "eingeben!"))
     
@@ -67,7 +70,6 @@ function isOpValid(op)
     return op == "+" || op == "-"  || op == "*"  || op == "/";
 }
 
-
 //  Modul: Rechenart auswählen || Test
 // ausgabe(rechner("+",15,5));
 // ausgabe(rechner("-",15,5));
@@ -75,7 +77,6 @@ function isOpValid(op)
 // ausgabe(rechner("/",15,5));
 // ausgabe(rechner("/",15,0));
 // ausgabe(rechner("#!?",15,5));
-
 
 function rechner(op,a,b) {
 

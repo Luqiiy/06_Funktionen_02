@@ -8,9 +8,22 @@
 4. Ausgabe in Konsole :: done
 */
 
+// ausgabe(rechner(getOp(),getZahl1(),5));
 
+//  Modul: Zhal 1 eingeben | Test:
+ausgabe(getZahl1("1"));
+ausgabe(getZahl1("2"));
+function getZahl1(numStr) {
+    let zahl = parseInt(prompt("Bitte Zahl " + numStr + "eingeben!"))
+    
+    while (isNaN(zahl)) {
+        zahl=parseInt(prompt("Das ist keine Zahl ! Bitte nochmal!"))
+    }
 
-//  ausgabe(rechner(getOp(),15,5));
+    return zahl;
+
+}
+
 
 //  Modul: Operant eingeben || Test
 // ausgabe(getOp());
